@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Business Permit</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Business Permit Form</h1>
+        <p>Please input Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nihil.</p>
+    </div>
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="businessName">Business Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="businessName"
+              name="businessName"
+              placeholder="Your Business' name"
+            />
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="businessOwner">Business Owner</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="businessOwner"
+                name="businessOwner"
+                placeholder="Owners Name"
+              />
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="address">Address</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Address"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+              <label for="contactNo">Contact No.</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="contactNo"
+                name="contactNo"
+                placeholder="Contact No."
+              />
+            </div>
+          </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="pmethod">Payment Method</label>
+          </div>
+          <div class="col-75">
+            <select id="country" name="paymentMethod">
+              <option value="cash">Cash on Pickup</option>
+              <option value="gcash">Gcash</option>
+            </select>
+          </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-25">
+              <label for="refNo">Referance Number(Gcash Payment)</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="refNo"
+                name="refNo"
+                placeholder="Gcash Reference No. if you chose gcash"
+              />
+            </div>
+          </div> -->
+
+        <div class="row">
+          <div class="col-25">
+            <label for="reference">Referance Number(Gcash Payment)</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="reference"
+              name="reference"
+              placeholder="Input your reference no. if you chose gcash as mode of payment"
+              style="height: 50px"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+</body>
+</html>
